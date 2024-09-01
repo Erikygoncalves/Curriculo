@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/curriculo.html -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo</title>
+    <link rel="stylesheet" href="./Curriculo_files/curriculo.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="http://127.0.0.1:5500/index.html">Home</a>
+        <a class="cabecalho__menu__link" href="http://127.0.0.1:5500/abouth.html">Sobre mim</a>
+        <a class="curriculo" href="http://127.0.0.1:5500/curriculo.html">Curriculo</a>
+        </nav>
+    </header>
+    <main>
+        <main class="apresentacao">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Currículo</h1>
+                <p class="apresentacao__conteudo__texto__pessoal">
+                    Me chamo Eriky, tenho 19 anos
+                </p>
+                <h2 class="apresentacao__conteudo__titulo">Experiências</h2>
+                <p class="apresentacao__conteudo__texto">
+                </p><ul class="apresentacao__conteudo__texto">
+                   
+                        <li> Empresa tal (2020 - 2021) - fazia isso e aquilo </li>
+                        <li> Empresa tal (2021 - 2023) - fazia isso e aquilo </li>
+                    
+                </ul>
+                <p></p>
+                <h2 class="apresentacao__conteudo__titulo">Estudos</h2>
+                <div class="apresentacao__conteudo__texto">
+                <ul class="apresentacao__conteudo__texto">
+                        <li>Curso HTML e CSS: Classes, posicionamento e Flexbox - Alura Cursos <a href="https://cursos.alura.com.br/certificate/%20cle2df9775-bbeb-47cf-82c1-8ac39ff8af60?lang=pt_BR" class=" botao__estudo">com certificado  </a> </li>
+                        <li>Curso HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags - Alura Cursos <a href="https://cursos.alura.com.br/certificate/2b0c2949-0599-4ba4-9dba-e781d85ca52d?lang=pt_BRS" class="botao__estudo__final">com certificado</a></li>
+                </ul>
+                </div>    
+            </section>
+            <img src="./Curriculo_files/Imagem do WhatsApp de 2024-08-30 à(s) 20.50.43_2b79e85b.jpg" alt="Foto do Eriky Programador" height="300px" width="300px" class="img">
+        </main> 
+    </main>
+    <footer>
+        <p class="apresentacao__rodape">
+            Desenvolvido por Eriky.
+        </p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
